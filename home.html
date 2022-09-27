@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Learn Japanese</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				 <ul class="navbar-nav mr-auto">
+     				 <li class="nav-item left">
+       					 <a class="nav-link active" href="home.html">Home</a>
+     				 </li>
+      				 <li class="nav-item left">
+       					 <a class="nav-link" href="kanji.html">Kanji</a>
+      				 </li>		
+					 <li class="nav-item left">
+       					 <a class="nav-link" href="resources.html">Resources</a>
+      				 </li>
+					 <li class="nav-item left">
+       					 <a class="nav-link" href="form.html">Connect</a>
+      				 </li>
+					 <li class="nav-item left">
+       					 <a class="nav-link" href="ref.html">References</a>
+      				 </li>
+						
+						
+					</ul>
+					
+      				<button type="button" id="mode" onclick="darkMode()">Dark Mode</button> <!--the darkMode function will be called when the button is clicked-->
+ 
+				
+			</nav>
+	  	</header>
+			  <div class="welcome">  
+				  <h1><span lang="ja" id="fade1">こんにちは！</span></h1>
+				  <p class="trans" id="fade3">Translation: Hello</p>
+				  <h2 id="fade2">Start Learning Japanese Today</h2>
+			  </div>
+
+
+  <div class = "container">
+		  <br>
+		  <div class="row">
+		  <div class="col-md-7">
+          <h2>Welcome!</h2>
+			<p>We know learning a new language may seem like a daunting task, that's why were here to help. 
+			  No matter what level you are we'll be able to help you find the materials you need for success.</p>
+			  <p>While Japanese may not be the easiest language to learn, especailly for native English speakers, practice makes perfect. It's recommened that you spend at least a few minutes everyday studying, this will help you make steady progress. </p>
+			  
+			  <p>What are you waiting for? There's no better time the start learning than now! Check below to view more tips for language learning. </p>
+			</div>
+			<div class="col-md-5 center">
+				<img id="neon" src="eddi-aguirre-o9iUbtfve1Q-unsplash.jpg" alt="image of neon lights">
+				<span class="small">Click to enlarge</span><br>
+				<span>Photo by: Aguirre, 2018</span>
+			 </div>
+		  </div>
+		  <hr>
+		  <div class="row">
+			<div class="col-md-5 center">
+			
+				<script>
+				
+				var imgNum = Math.floor(1 + Math.random() * 3); //random number generator that will decide which image is displayed
+				if(imgNum == 1){ 
+					document.writeln("<img class=randImg src=fall.jpg height=300px width= 255px alt=fall leaves><br><span>Photo by: Barquero, 2020</span>");
+				}
+				if(imgNum == 2){
+					document.write("<img class=randImg src=dragon.jpg height=300px width=355px alt=Japanese Festival><br><span>Photo by: Hoang, 2019</span>");
+				}
+				if(imgNum == 3){
+					document.write("<img class=randImg src=moon.jpg height=250px width=350px alt=image of the moon><br><span>Photo by: Dibert, 2018</span>");
+				}
+				</script>
+				<br>
+				<button id="fadeOutBtn">Fade out image</button>
+				
+				</div>
+			<div class="col-md-7">
+				<h3> Did you know? </h3>
+				<p> Since it's fall now we thought we'd share some interesting words relating to fall in Japan. </p>
+				<ul>
+					<li><span lang="ja"><span id="enlarge1">月見 </span>(つきみ, </span>tsukimi) - Moon viewing</li>
+					<li><span lang="ja"><span id="enlarge2"> 秋祭り </span>(あきまつり,  </span> aki matsuri) - Fall festival</li>
+					<li><span lang="ja"><span id="enlarge3"> 焼き栗 </span> (やきぐり, </span> yaki guri) - Roasted chestnuts</li>
+					<li><span lang="ja"><span id="enlarge4"> ハロウィーン </span></span> - Halloween</li>
+					<li><span lang="ja"><span id="enlarge5"> 紅葉 </span> (こうよう, </span> kouyou) - Autumn colors</li>
+				</ul>
+				
+			</div>
+		  </div>
+		  <hr>
+		  <h3> Tips for learing </h3><br>
+			  <div class="row">
+			  <div class="col-md-4 borderRight">
+				  <h4>Textbooks</h4>
+				  <p>Textbooks are a great resource to learn Japanese. Whether your learning in a classroom or learning by yourself, there are plenty of great textbooks out there. Check out our <a href = "resources.html">Resources Page</a> for more information.</p>
+		  </div>
+	
+				  <div class="col-md-4 borderRight">
+				    <h4>Immersion</h4>
+				  <p>Fully immersion is probably the best way to learn a language. This may be difficult if you're not living in Japan. However, reading books, watching TV shows and practicing speaking with others are great for learning the language.  </p>
+		  </div>
+				  <div class="col-md-4">
+					  <h4>Have Fun</h4>
+				  <p>No matter what your reason for learning the language is, it's important to enjoy youself and have fun. Everyone makes mistakes and that's important to the learning process. Meet others learning the language through our <a href="form.html">Connect Page</a>.</p>
+					  
+		  </div>
+		  </div>
+	  </div>
+	 
+	  <footer><p>Disclaimer: This website is developed as part of an educational project. 
+		  Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.
+		  </p> 
+		  <p class="center" id="date"></p>
+	     <p><a href = "css/style.css" >Link to style.css</a></p>
+		  <p><a href = "css/bootstrap.css" >Link to bootstrap styles</a></p>
+      </footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+	<script>
+	function start(){
+		modified(); //call the modified function
+		fade(); //call the fade function 
+		
+		//onclick event will call the enlargeImg fucntion  
+		document.getElementById("neon").addEventListener("click", enlargeImg, false);
+		
+		//mouseover event will change the font size and weight for enlarge1
+		document.getElementById("enlarge1").addEventListener("mouseover", function(){document.getElementById("enlarge1").style.fontSize = "x-large";
+		document.getElementById("enlarge1").style.fontWeight = "950";}, false);
+		
+		//mouseout event will change the font size and weight back to the initial style for enlarge1
+		document.getElementById("enlarge1").addEventListener("mouseout", function(){document.getElementById("enlarge1").style.fontSize = "initial";
+		document.getElementById("enlarge1").style.fontWeight = "initial";}, false);
+			
+		//mouseover event will change the font size and weight for enlarge2	
+		document.getElementById("enlarge2").addEventListener("mouseover", function(){document.getElementById("enlarge2").style.fontSize = "x-large";
+		document.getElementById("enlarge2").style.fontWeight = "950";}, false);
+		
+		//mouseout event will change the font size and weight back to the initial style for enlarge2
+		document.getElementById("enlarge2").addEventListener("mouseout", function(){document.getElementById("enlarge2").style.fontSize = "initial";
+		document.getElementById("enlarge2").style.fontWeight = "initial";}, false);	
+		
+		//mouseover event will change the font size and weight for enlarge3
+		document.getElementById("enlarge3").addEventListener("mouseover", function(){document.getElementById("enlarge3").style.fontSize = "x-large";
+		document.getElementById("enlarge3").style.fontWeight = "950";}, false);
+		
+		//mouseout event will change the font size and weight back to the initial style for enlarge3
+		document.getElementById("enlarge3").addEventListener("mouseout", function(){document.getElementById("enlarge3").style.fontSize = "initial";
+		document.getElementById("enlarge3").style.fontWeight = "initial";}, false);	
+		
+		//mouseover event will change the font size and weight for enlarge4
+		document.getElementById("enlarge4").addEventListener("mouseover", function(){document.getElementById("enlarge4").style.fontSize = "x-large";
+		document.getElementById("enlarge4").style.fontWeight = "950";}, false);
+		
+		//mouseout event will change the font size and weight back to the initial style for enlarge4
+		document.getElementById("enlarge4").addEventListener("mouseout", function(){document.getElementById("enlarge4").style.fontSize = "initial";
+		document.getElementById("enlarge4").style.fontWeight = "initial";}, false);	
+		
+		//mouseover event will change the font size and weight for enlarge5
+		document.getElementById("enlarge5").addEventListener("mouseover", function(){document.getElementById("enlarge5").style.fontSize = "x-large";
+		document.getElementById("enlarge5").style.fontWeight = "950";}, false);
+		
+		//mouseout event will change the font size and weight back to the initial style for enlarge5
+		document.getElementById("enlarge5").addEventListener("mouseout", function(){document.getElementById("enlarge5").style.fontSize = "initial";
+		document.getElementById("enlarge5").style.fontWeight = "initial";}, false);	
+	}
+	function modified(){
+		var day = document.lastModified;  //holds the value for date last modified
+		document.getElementById("date").innerHTML ="Last modified: " + day; //displays the date last modified 
+		
+		window.setTimeout(fade, 7000); //calls the fade function, the fade will lase for 7 seconds
+		window.setTimeout(fade, 7000); //calls the fade function, the fade will lase for 7 seconds
+		window.setTimeout(fade, 9000); //calls the fade function, the fade will lase for 10 seconds
+	}
+	function fade(){
+        document.getElementById('fade1').style.opacity = '1'; //fades the text "こんにちは!" to an opacity of 1
+		document.getElementById('fade2').style.opacity = '.8'; //fades the text "Start Learning Japanese Today" to an opacity of .8
+		document.getElementById('fade3').style.opacity = '.8'; // fades the text "Translation: Hello" to an opacity of .8
+	}
+	
+	function darkMode(){
+		var area = document.body; //area is the body of the page
+		area.classList.toggle("dark-mode"); //the dark mode styles can be toggled on or off
+	}
+	
+	function enlargeImg(){
+		var img = document.getElementById("neon"); //img is the image with the id "neon"
+		var width = 250; //holds the starting width of the image
+		var height = 325; //holds the starting height of the image
+		
+		//imterval is the duration of the animation, it will last one second 
+		var interval = setInterval(function(){ 
+		
+			//add 100px to both the height and width
+			width+=100;  
+			height+=100;
+
+			clearInterval(interval); //stop the animation
+		
+			img.style.width = width+"px"; //updates the width of the image
+			img.style.height = height+"px"; //updates the height of the image
+			}, 1000);
+	}
+	
+	window.addEventListener('load', start, false);
+	</script>
+	<script>
+		$(document).ready(function(){
+		//when the button is clicked the image with the randIng class will fade out
+		$("#fadeOutBtn").click(function(){ 
+				$("img.randImg").fadeOut();
+			});
+        });
+</script>
+	
+  </body>
+</html>

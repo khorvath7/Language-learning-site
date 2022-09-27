@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources | Learn Japanese</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="SpryAssets/SpryData.js"></script>
+	<script src="SpryAssets/xpath.js"></script>
+	<script>
+		//sbooks will be areas where spry data is used and read from the XML file
+		var sbooks = new Spry.Data.XMLDataSet("bookList.xml", "books/book");
+	</script>
+	
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				 <ul class="nav navbar-nav mr-right">
+     				 <li class="nav-item"> <a class="nav-link" href="home.html">Home </a> </li>
+					<li class="nav-item">
+       					 <a class="nav-link" href="kanji.html">Kanji</a>
+      				 </li>
+					 <li class="nav-item">
+       					 <a class="nav-link active" href="resources.html">Resources</a>
+      				 </li>
+					 <li class="nav-item">
+       					 <a class="nav-link" href="form.html">Connect</a>
+      				 </li>
+					 <li class="nav-item">
+       					 <a class="nav-link" href="ref.html">References</a>
+      				 </li>
+      				
+   				 </ul>
+
+			</nav>
+	  	</header>
+	  
+	  <div class = "container">
+		  <h2>Resources</h2>
+		  	<div class = "row">
+			<div class="col-md-10">
+				<p>There are many great resources for learning Japanese. Many people, beginners especailly, may have trouble finding the textbook that right for them. Differnet textbooks may be better suited to differnt learning styles so picking the one that's right for you can be a challenge. You can search for textbooks using the guide below.
+				</p>
+		
+				<p>Textbooks are a great way to learn Japanese in a structured way; however,  emmersing yourself in the language will be most beneficial. Other ways to learn and improve your Japanese skills includes reading books, watching tv shows and movies, listening to podcasts or watching vlogs. Of course there are many other options for learning and everyone is different so finding what works best for you may take some time. </p>
+				
+			</div>
+			</div>
+			
+			<div class="row" id="spryRegion">
+			<br>
+				<div class="col-md-3 spryRegion1 v-menu words">
+					<!--will list the titles of each book in an li element-->
+					<div spry:region="sbooks">
+					<ul class="bookList" spry:repeat="sbooks" spry:setRow="sbooks" spry:hover="rowHover">
+						<li>
+							{title}
+						</li>
+					</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+			        <div spry:detailregion="sbooks">
+					<br><br>
+						<!-- will display the title and description of the selected book-->
+						<h4> {title}:</h4>	
+						<p>{desc}</p>
+					
+					</div>
+				</div>
+				
+				<div class="col-md-5">
+					<!--will display the image of the selected book-->
+					<div spry:detailregion="sbooks"><br><br><img src="{image}" alt="Book Cover Image" /></div>
+					<div class="small" spry:detailregion="sbooks"><p>{cite}</p></div>
+				</div>
+			</div>
+			
+			<br>
+		<button id="btn" onclick="displayTable();">Show Table View</button> <!--will call the displayTable function when clicked-->
+		<br>
+		<div id = "showTable">
+		<br>
+		  <h6>Quick Links:</h6>
+		  <ol>
+		  	<li><a href="#genki">Genki</a></li>
+			<li><a href="#minna">Minna no Nihongo</a></li>
+			<li><a href="#guide">Guide to Learning Japanese Grammar</a></li>
+			<li><a href="#tobira">Tobira</a></li>
+		  </ol>
+		  
+<table>
+    <tbody>
+    <tr>
+      <th scope="col">Book Title</th>
+	  <th scope="col">Summary</th>
+      <th scope="col">Pros</th>
+      <th scope="col">Cons</th>
+      <th scope="col">Level</th>
+    </tr>
+    <tr>
+      <td id="genki"><a class="change" href="http://genki.japantimes.co.jp/index_en">Genki</a></td>
+		<td>One of the most popular textbooks for beginners</td>
+      <td><ul>
+			  <li>Workbooks avaliable</li>
+			  <li>Grammar points are explained in English</li>
+		  </ul>
+	  </td>
+      <td><ul>
+			  <li>Not intended for self study</li>
+			  <li>Answer keys sold separetly</li>
+		  </ul></td>
+      <td>Beginner</td>
+    </tr>
+    <tr>
+      <td id="minna"><a class="change" href="https://www.3anet.co.jp/np/en/books/2300/">Minna No Nihongo</a></td>
+		<td>Another popular choice for beginners, the textbook has a wide variety of activities.</td>
+      <td>
+		  <ul>
+			  <li>Has reading, writing, speaking and listening activities</li>
+			  <li>Introduces kanji from the beginning</li>
+		  </ul>
+	  </td>
+      <td><ul>
+			  <li>Not intended for self study</li>
+			  <li>Answer keys sold separetly</li>
+	    </ul></td>
+      <td>Beginner to Intermediate</td>
+    </tr>
+    <tr>
+      <td id="guide"><a class="change" href="http://www.guidetojapanese.org/learn/">Guide to Learning Japanese Grammar</a></td>
+		<td>Great guide for learning the structure of the language, easy for beginners to comprehend.</td>
+      <td><ul>
+			  <li>Free online resource</li>
+			  <li>Designed for self study</li>
+	    </ul></td>
+      <td><ul>
+			  <li>No listening excercises</li>
+	    </ul></td>
+      <td>Beginner to Intermediate</td>
+    </tr>
+    <tr>
+      <td id="tobira"><a class="change" href="http://tobiraweb.9640.jp/">Tobira</a></td>
+		<td>Used in many upper level Japanese classes, it is a great textbook for intermediate to advanced learners.</td>
+      <td><ul>
+			  <li>Has speaking and listening activities</li>
+		  	  <li>Can be used for self study</li>
+	    </ul></td>
+      <td><ul>
+			  <li>Fast paced, can be overwhelming</li>
+	    </ul></td>
+      <td>Intermedaite to Advanced</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+		  
+		  
+	  </div>
+	  
+	  <footer><p><b>Disclaimer: </b>This website is developed as part of an educational project. 
+		  Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.
+		  </p>
+	  		  <p><a href = "css/style.css" >Link to style.css</a></p>
+		  <p><a href = "css/bootstrap.css" >Link to bootstrap styles</a></p></footer>
+		  
+	<script>
+	var status = "hidden"; //status tells us if the table is hidden or visible, it is hidden by defualt 
+	showTable.style.display = "none"; //changes the style of the table so it will not be displayed
+		
+		 //function will show or hide the table
+		function displayTable(){ 
+			
+			//this is getting the id of the table that will be hidden
+			var showTable = document.getElementById("showTable"); 
+			
+			//if the status is hidden when button is clicked
+			if(status == "hidden"){ 
+				showTable.style.display = "none"; //hide table content
+				document.getElementById("btn").innerText = "Show Table View"; //change button text 
+				status = "visible"; //change status to visible 
+			}
+			
+			//if status is visible when button is clicked 
+			else if( status == "visible"){
+				showTable.style.display = "inline"; //show table text
+				document.getElementById("btn").innerText = "Hide Table View"; //change button text 
+				status = "hidden"; //change status to hidden
+			}
+			
+
+		}
+		
+
+	</script>
+
+  </body>
+</html>

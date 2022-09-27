@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kanji | Learn Japanese</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	  <header>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				 <ul class="nav navbar-nav mr-right">
+     				 <li class="nav-item"> <a class="nav-link" href="home.html">Home </a> </li>
+					 <li class="nav-item">
+       					 <a class="nav-link active" href="kanji.html">Kanji</a>
+      				 </li>		 
+					 <li class="nav-item">
+       					 <a class="nav-link" href="resources.html">Resources</a>
+      				 </li>
+					 <li class="nav-item">
+       					 <a class="nav-link" href="form.html">Connect</a>
+      				 </li>
+      				<li class="nav-item">
+       					 <a class="nav-link" href="ref.html">References</a>
+      				 </li>
+		  </ul>
+		  </nav>
+	  </header>
+	<div class = "container">
+	  <h2>Kanji</h2>
+		<div class="row">
+			<div class="col-md-6">
+		<p>Kanji is one one of the three writing systems used in Japanese. Kanji are adopted Chinese characters and while many of them retain thier original (or similar) meanings, the pronunciations are often different. There are many different kanji lists, some designed by the Japanese governement to for education purposes. To learn more about kanji <a href="https://en.wikipedia.org/wiki/Kanji">click here</a>.</p>
+	  <p>We'll be foucsing on JLPT kanji. JLPT stands for Japanese-Language Proficiency Test, this test focuses on reading and listening skills as well as vocabulary and grammar. There are 5 levels, N5 being the easiest and N1 being the hardest. </p>
+	  <div class = "center">
+	  <p> Want to test you knowledge of kanji?</p>
+	  <button id="quiz" type="button">Take Quiz</button>
+	  </div>
+			</div>
+			<br>
+		<div class="col-md-6 center">
+			<img id="menu" src="kevin-borrill-ZslfLas1lh4-unsplash.jpg" alt="image of handwritten Japanese">
+			<span class="imgcredit">Photo by: Borrill, 2019</span>
+			</div>
+			<br>
+			
+			</div>
+	
+		<hr>
+		<div class="row">
+			<br>
+		
+		  <div class="col-md-10.offset-ms-2 level">
+			 
+			<h3>N5 </h3>
+			  <p>At this level your able to understand some basic Japanese. You should be able to read hiragana, katakana and some basic kanji. To pass this level you'll need to know about <a href="https://jlptsensei.com/jlpt-n5-kanji-list/">80 to 100 kanji</a>. </p>
+			   </div>
+				</div>
+		<br>
+		<div class="row">
+			<div class="col-md-10.offset-ms-2 level">
+			<h3>N4 </h3>
+			  <p>At this level your able to understand basic Japanese. You should be able to read and understand simple passages using everyday vocabulary. There are about <a href="https://jlptsensei.com/jlpt-n4-kanji-list/">170 kanji</a> unique to this level, you'll need to know about 250 kanji total. </p>
+			   </div>
+				</div>
+		<br>
+		<div class="row">
+			<div class="col-md-10.offset-ms-2 level">
+			<h3>N3 </h3>
+			  <p>At this level your able to understand Japanese that would be used in everyday life. You should be able to read and understand passages about everyday topics. There are about <a href="https://jlptsensei.com/jlpt-n3-kanji-list/">370 kanji</a> unique to this level, you'll need to know about 650 kanji total. </p>
+			   </div>
+				</div>
+	  <br>
+		<div class="row">
+			<div class="col-md-10.offset-ms-2 level">
+			<h3>N2 </h3>
+			  <p>At this level your able to understand Japanese that would be used in everyday conversation with a wider variety of vocabulary. You should be able to read articles, passeges and newspapers about various toipcs. There are about <a href="https://jlptsensei.com/jlpt-n2-kanji-list/">370 kanji</a> unique to this level, you'll need to know about 1000 kanji total. </p>
+			   </div>
+				</div>
+		<br>
+		<div class="row">
+			<div class="col-md-10.offset-ms-2 level">
+			<h3>N1 </h3>
+			  <p>At this level your able to understand Japanese at a near fulent level. You should be able to read and understand passages about everyday topics.  <a href="https://jlptsensei.com/jlpt-n1-kanji-list/">Click here </a> to view a list of kanji unique to this level, you'll need to know about 2000 kanji total. </p>
+				</div>
+		</div>
+		<br>
+	  
+</div>
+	  <footer><p><b>Disclaimer: </b>This website is developed as part of an educational project. 
+		  Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.
+		  </p> 
+	  		  <p><a href = "css/style.css" >Link to style.css</a></p>
+		  <p><a href = "css/bootstrap.css" >Link to bootstrap styles</a></p></footer>
+
+	<script>
+	function start(){
+		document.getElementById("quiz").addEventListener("click", request, false); //calls the request menthod when the button is clicked	
+		
+	}
+	
+	function request()
+   {
+      // attempt to create XMLHttpRequest object and make the request
+      try
+      {
+		
+         var asyncRequest = new XMLHttpRequest(); // create request object
+
+         // register event handler
+         asyncRequest.onreadystatechange = function(){ 
+			if(this.readyState == 4 && this.status == 200){
+				window.open("quiz.html"); //will open quiz.html in a new window
+				
+			}
+		};
+		
+		asyncRequest.open("GET", "quiz.html", true); 
+		asyncRequest.send();
+		 
+      } // end try
+      catch (exception)
+      {
+         alert("Request Failed");
+      } // end catch
+   } // end function getImages
+	
+	window.addEventListener('load', start, false);
+	</script>
+	
+  </body>
+</html>

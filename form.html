@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect | Learn Japanese</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+
+  
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	  <header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				 <ul class="navbar-nav mr-auto">
+     				 <li class="nav-item left">
+       					 <a class="nav-link" href="home.html">Home</a>
+     				 </li>
+      				 <li class="nav-item left">
+       					 <a class="nav-link" href="kanji.html">Kanji</a>
+      				 </li>		
+					 <li class="nav-item left">
+       					 <a class="nav-link" href="resources.html">Resources</a>
+      				 </li>
+					 <li class="nav-item left">
+       					 <a class="nav-link active" href="form.html">Connect</a>
+      				 </li>
+					 <li class="nav-item left">
+       					 <a class="nav-link" href="ref.html">References</a>
+      				 </li>
+						
+						
+					</ul>
+					<ul class= "nav navbar-nav justify-content-end">
+					 <li class="nav-item right">
+       					<a id = "name" class ="nav-link" href="#"></a> 
+						 
+      				 </li>
+					</ul>
+      				
+      				<button type="button" id="reset">Reset</button>
+ 
+				
+			</nav>
+	  	</header>
+	  <div class = "container">
+	  <h2>Want to connect with us?</h2>
+	  	<br>
+		  <div class="row">
+			  <div class="col-md-6">
+				  <p>We know can be difficult learning a language alone and we want to help make it easier for you. We make it easier to connect with like-minded learners through the study groups and events we host. By signing up below you can choose to recieve our monthly newsletters which is written by Japanese teachers, tutors and community members. </p>
+			  <p>If you'd like to join our mailing list to recieve newsletters and special offers please fill out the form below.</p>
+			  </div>
+			  <div class="col-md-6 center">
+		  <img id="calendar" src = "charles-deluvio-nO3czMuR_N0-unsplash.jpg" alt="image of a calendar">
+		  <span>Photo by: Deluvio, 2018</span>
+			  </div>
+		  </div>
+		<br>
+		<form action="" id="connect" >
+			<h2 class="formb">Sign Up</h2>
+			<br>
+			<fieldset>
+				<legend>Personal Information</legend>
+	  		<label class="formb" for="fname">First name:</label>
+  			<input type="text" id="fname" name="fname">
+				<br>
+				<br>
+			<label class="formb" for="lname">Last name:</label>
+  			<input type="text" id="lname" name="lname">
+				<br>
+				<br>
+ 			<label class="formb" for="email">E-Mail Address:</label>
+  			<input type="email" id="email" name="email">
+	  			<br>
+	  			<br>
+			<label class="formb" for="birthday">Enter your birthday:</label>
+		      <input type="text" id="Datepicker1">
+				<br>
+				<br>
+		      <label class="formb" for="level" id="Autocomplete1">Select your Country:</label>
+ 				<select name="country">
+			  <option>-Choose One-</option>
+			 	 <option>Australia</option>
+    				<option>Brazil</option>
+    				<option>China</option>
+    				<option>Denmark</option>
+					<option>Ethopia</option>
+    				<option>Finland</option>
+					<option>Greece</option>
+    				<option>Hungary</option>
+					<option>Italy</option>
+					<option>Jamacia</option>
+    				<option>Kenya</option>
+					<option>Lithuania</option>
+					<option>Mexico</option>
+    				<option>Norway</option>
+    				<option>Other</option>
+					<option>Portugal</option>
+    				<option>Qatar</option>
+					<option>Russia</option>
+    				<option>Singapore</option>
+					<option>Turkey</option>
+    				<option>United States</option>
+					<option>Venezuela</option>
+    				<option>Yemen</option>
+					<option>Zambia</option>
+ 				</select>
+<br>
+				<br>	
+				
+			<label class="formb" for="level">What is your current skill level?</label>
+ 				<select id="level" name="level">
+					<option value=" ">-Choose One-</option>
+    				<option value="absbeginner">Absolute Beginner</option>
+    				<option value="beginner">Beginner</option>
+    				<option value="intermediate">Intermediate</option>
+    				<option value="Advanced">Advanced</option>
+ 				</select>
+			<br>
+				<br>
+			<label class="formb">What news are you interested in receiveing? (Check all that apply)</label>
+				<br>
+				<input type="checkbox" id="newsletter" name="box" value="Newsletter">
+            <label for="newsletter">News letters</label><br>
+            	<input type="checkbox" id="tutoring" name="box" value="Tutoring">
+            <label for="tutoring">Tutoring</label><br>
+           		<input type="checkbox" id="study" name="box" value="Study">
+            <label for="study">Study Groups</label><br>
+				<input type="checkbox" id="event" name="box" value="Event">
+            <label for="study">Events</label><br>
+				<span id="checkError"></span>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Help us spread the word</legend>
+			<label class="formb">How did you hear about us?</label>
+			<br>
+				<input type="radio" id="twitter" name="twitter" value="Twitter">
+  			<label for="twitter">Twitter</label><br>
+  				<input type="radio" id="facebook" name="facebook" value="Facebook">
+ 			<label for="facebook">Facebook</label><br>
+				<input type="radio" id="youtube" name="youtube" value="Youtube">
+  			<label for="youtube">Youtube</label><br>
+  				<input type="radio" id="other" name="other" value="Other">
+  			<label for="other">Other</label>
+			<br><br>
+			<label class="formb" for="rating">How likely are you to reccomend this site? <br> from 0 (unlikely) and 10 (highly likely):</label>
+			<br>
+            <input type="range" id="rating" name="rating" min="0" max="10">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Other</legend>
+			<label class="formb" for="comment">Comments or questions?</label>
+				<br>
+ 		    <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+			</fieldset>
+			<br><br>
+				
+			 <button type="submit" >Submit</button>
+	  	</form>
+		
+		
+	  </div>
+	  
+	  <footer><p><b>Disclaimer: </b>This website is developed as part of an educational project. 
+		  Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.
+		  </p> 
+	  		  <p><a href = "css/style.css" >Link to style.css</a></p>
+		  <p><a href = "css/bootstrap.css" >Link to bootstrap styles</a></p></footer>
+
+
+	<script>
+	var name = ""; //holds the user name		
+	function start(){
+		//check if there is a name in the localstorage, if not prompt for name
+		if(localStorage.name == null){
+			promptName();
+		}
+		
+		document.getElementById("reset").addEventListener("click", resetName); //will call the reset function when the button is clicked
+		document.getElementById("name").innerHTML = "Welcome, " + localStorage.name;//display a welcome message with the users name
+	
+		
+	}
+	
+	function promptName(){
+	//prompt the user for their name and set it as a localstoage value
+		localStorage.name = prompt("Please enter your name");
+		
+	}
+	
+	function resetName(){
+		localStorage.clear(); //clear the localstorage
+		promptName();
+		document.getElementById("name").innerHTML = "Welcome, " + localStorage.name; //display a welcome message with the users name
+		
+	}
+	
+	
+	window.addEventListener('load', start, false);
+
+
+    </script>
+		
+	<script>
+$("#connect").validate({
+			rules: {
+				//fname is a required field
+				fname: { 
+					required: true
+				},
+	
+			//lname is a required field
+				lname: {
+					required: true
+				},
+
+			//email is a required field and must be a vaild address
+				email:{
+					required: true,
+					email: true
+				},
+				
+			//must select at least one checkbox
+				box:{
+					required: true
+				}
+			},
+			
+			messages:{
+					fname: "Please enter your first name.",
+					lname: "Please enter your last name.",
+					email: "Please enter a vaild email address.",
+					box: "Please select at least 1 option."
+			},
+	//this function changes the placement of the error message 
+		errorPlacement: function(error, element) {
+			if(element.attr("name") == "box") { //checks for the element with the name box
+    			error.appendTo("#checkError"); //places error in the snap with the checkError id
+			}
+			else{
+    			error.insertAfter(element);
+			}
+   }
+
+});
+		
+
+$(function() {
+	$( "#Datepicker1" ).datepicker(); 
+});
+    </script>
+	
+  </body>
+</html>

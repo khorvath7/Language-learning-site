@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<title>Genki</title>
+		<desc>Genki is one of the most popular textbooks for beginners. Covers a variety of topics including: speaking, listening, reading and writing. Avaliable in both Japanese and English, workbooks are also avaliable.</desc>
+		<image>genki.jpg</image>
+		<cite>Banno, E., Ohno, Y., Shinagawa, C., &amp; Tokashiki, K. (2011). Genki: An Integrated Course in Elementary Japanese (2nd ed., Vol. 1). The Japan Times.</cite>
+	</book>
+	<book>
+		<title>Minna no Nihongo</title>
+		<desc>Another popular choice for beginners, the textbook has a wide variety of activities. Includes a variety speaking, listening, reading and wirting exercises.</desc>
+		<image>minna.jpg</image>
+		<cite>Nettowaku, S., &amp; Kaisha, K. (2001). Minna no Nihongo (Vol. 1). 3A Corp.</cite>
+	</book>
+	<book>
+		<title>Guide to Learning Japanese Grammar</title>
+		<desc>Great guide for learning the structure of the language, easy for beginners to comprehend. There is a printed book avaliable but all of the information is avaiable online for free. Also, a great resource for self study.</desc>
+		<image>taekim.jpg</image>
+		<cite>Kim, T. (2014). A Guide to Japanese Grammar: A Japanese approach to learning Japanese grammar. CreateSpace Independent Publishing Platform.</cite>
+	</book>
+	<book>
+		<title>Tobira</title>
+		<desc>Used in many upper level Japanese classes, it is a great textbook for intermediate to advanced learners. Covers a wide variety of more advanced topics including history, geography and pop culture. Also has additional resources inlcuding speaking and listening practice.</desc>
+		<image>tobira.jpg</image>
+		<cite>Oka, M., Tsutsui, M., Kondo, J., Emori, S., Hanai, Y., &amp; Ishikawa, S. (2009). Tobira: Gateway to Advanced Japanese. Kurosio.</cite>
+	</book>
+</books>

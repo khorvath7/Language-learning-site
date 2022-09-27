@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	width: 80%;
+	padding-top: 10px;
+	padding-bottom:10px;
+	overflow: hidden;
+}
+.center{
+	text-align: center;
+}
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.borderRight{
+
+	border-right: 1px soild black;
+}
+
+a{
+	text-decoration: underline;
+}
+
+.words{
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.small{
+	font-size:9px;
+}
+
+.plain{
+	list-style: none;
+}
+
+.rowHover{
+	cursor: pointer;
+	color: #343a40;
+	background-color: #d9d9d9;
+}
+	
+a{
+	color:#2B8CE2;
+}
+
+a:visited{
+	color:#b46960;
+}
+
+.nav-link{
+	text-decoration: none;
+}
+
+.dark-mode{
+	background:#5c6166;
+	color: white;
+}
+
+.dark-mode.a:visited{
+	color: #d6d7d8;
+}
+
+h3{
+	text-shadow: 2px 2px #8c8c8c;
+}
+
+caption{
+	text-align: center;
+	font-size: 9px;
+}
+
+ul{
+  list-style-type: square;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:first-child { 
+	background-color: #343a40;
+	color: white;
+}
+
+td{
+	padding: 10px;
+}
+
+form{
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.formb{
+	font-weight: bold;
+}
+.imgcredit{
+	text-align: center;
+}
+.level{
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.v-menu{
+	height: auto;
+	width: auto;
+	background-color: #343a40;
+	color: white;
+}
+
+.bookList{
+  margin:0;
+  padding: 10px;
+  padding-top:53px;
+  padding-bottom:53px;
+  list-style-type: none;
+  border-bottom: medium solid black;
+  display: block;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spryRegion1{
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+#calendar{
+	display: block;
+    margin:auto;
+	width: 350px;
+	align-content: center;
+}
+
+#neon{
+	width: 250px;
+	height: 325px;
+	display: block;
+    margin:auto;
+	padding: 10px;
+	border: 1px solid black;
+	background: #eceaf0;
+}
+
+#menu{
+	width: 400px;
+	display: block;
+    margin:auto;
+}
+
+#img1{
+	margin:0 auto;
+}
+
+#fade1, #fade2, #fade3{
+	opacity:0;
+	transition:1.5s opacity;
+}
+
+#quiz{
+	padding: 7px;
+	margin-bottom: 10px;
+}
+
+#moveImg{
+	position: absolute;
+}
+
+.book{
+	height = 399px;
+}
+
+#spryRegion{
+	border: 1px solid black;
+}
+
+.welcome{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #eceaf0;
+	color: #343a40;
+	border-bottom: 3px solid #bc002d;
+
+}
+.trans{
+	color: #707579;
+	font-size: 15px;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+footer{
+padding: 10px;
+	background:#343a40;
+	color: white;
+}
